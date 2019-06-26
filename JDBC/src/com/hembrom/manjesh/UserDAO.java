@@ -14,7 +14,7 @@ public class UserDAO {
 	{
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mariadb://localhost:3306/mydb","root","13miku11");
+			Connection con = DriverManager.getConnection("jdbc:mariadb://localhost:3306/mydb","root","");
 			PreparedStatement ps = con.prepareStatement(sql);
 			
 			InsertStudent();
